@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            Stranded
+        </title>
+        <script src = 'game.js'></script>
+        <link rel = "stylesheet" href = "game.css">
+    </head>
+    <body onload="startMenu()">
+        <h1 id = clock></h1>
+<img src="images/bgbeachwhouse.png" id = "currentScene">
+<img src = "images/idle boy animation.gif" id = "player">
+<img src="images/right arrow.png" id = "right_arrow" onclick="rightArrow()">
+<img src="images/left arrow.png" id = "left_arrow" onclick="leftArrow()">
+<div id = "pauseMenu">
+    <img src="images/gameisllesctounll.png"><br> <br>
+    <img id = 'pauseMenuButton'onclick = unPauseGame() src = 'images/unpause button.png'><br><br>
+    <img onclick = optionsMenu() id = 'optionsButton' src = 'images/options button.png'><br><br>
+    <img onclick = controlsMenu() id = 'controlsButton' src = "images/controls button.png">
+</div>
+<div id = "optionsMenu">
+    <img src="images/gameisllesctounll.png"><br><br>
+    <img src = "images/back button.png" onclick = "returnToPause()" id = "backButton"><br><br>
+    <img src="images/currentcharB.png"><br>
+    <p id = "currentCharecter">boy</p><br>
+    <img src = "images/charecter change button.png" onclick= "changeCharecter(true)" id = "charecterChangeButton">
+</div>
+<div id = "StartMenu">
+    <br>
+    <img src ="images/title.png"><br><br>
+    <img src = "images/start button.png" id = "startButton" onclick = "start()"><br><br>
+    <img src = "images/charecter change button.png" onclick="changeCharecter(false)" id = "charecterChangeButton"><br><br>
+    <img onclick = controlsMenu() id = 'controlsButton' src = "images/controls button.png"><br><br>
+    <img src="images/credits button.png" id = "creditsButton" onclick = "credits()">
+</div>
+<div id = "roomScene">
+    <img id = "mapItem" src ="images/map.png" onclick = "mapClick()"style="position: absolute; top: 53%; left: 32%; z-index: 2;width: 125px;">
+    <img id = "paintingItem" src ="images/artwork.png" onclick = "paintingClick()"style="position: absolute; top: 30%; left: 30%; z-index: 2; width: 150px;">
+    <img id = "barrelItem" src ="images/barrel.png" onclick = "barrelClick()"style="position: absolute; top: 60%; left: 90%; z-index: 2; width: 90px;">
+    <img id = "flaskItem" src ="images/flask.png" onclick = "flaskClick()" style="position: absolute; top: 20%; left: 68.75%; z-index: 2; width: 50px;">
+    <img id = "radioItem" src ="images/radio.png"onclick = "radioClick()" style="position: absolute; top: 20%; left: 80%; z-index: 2; width: 75px;">
+    <img id = "lampItem" src ="images/lamp.png" onclick = "lampClick()"style="position: absolute; top: 14.5%; left: 87.5%; z-index: 2; width: 75px;">
+    <img id = "clockItem" src ="images/clock.png" onclick = "clockClick()"style="position: absolute; top: 35%; left: 73%; z-index: 2; width: 55px;">
+    <img id = "plantItem" src ="images/plant.png" onclick = "plantClick()" style="position: absolute; top: 37%; left: 85%; z-index: 2; width: 95px;">
+</div>
+<img src = "images/back button.png" id = "removeZoom" onclick="leaveZoom()">
+<img src = "images/mapzoom.png" id = "mapZoom">
+<img src = "images/paintingzoom.png" id = "paintingZoom">
+<img src = "images/flaskzoom.png" id = "flaskZoom">
+<img src = "images/radiozoom.png" id = "radioZoom">
+<img src = "images/lampzoom.png" id = "lampZoom">
+<img src = "images/clockzoom.png" id = "clockZoom">
+<img src = "images/plantzoom.png" id = "plantZoom">
+<img src = "images/barrelzoom.png" id = "barrelZoom">
+<img src = "images/rockzoom.png" id="rockZoom">
+<img src = "images/tikizoom.png" id="tikiZoom">
+<img src = "images/crabzoom.png" id="crabboZoom">
+<img src = "images/treezoom.png" id="treeZoom">
+<img src = "images/oilzoom.png" id="oilZoom">
+<img src = "images/shellzoom.png" id="shellZoom">
+<img src = "images/planezoom.png" id="planeZoom">
+<div id = "scene2layout">
+<img id = "rockItem" src = "images/rock.png" onclick="rockClick()" style="position: absolute; top: 77%; left: 15.3%; z-index: 2; width: 50px;">
+<img src = "images/crabhappy.png" onclick = "crabClick()"id = "crabbo" style="position: absolute; top: 35%; left: 40%; z-index: 2; width: 300px;">
+<img id = "treeItem" src = "images/palmtree.png" onclick = "treeClick()"style="position: absolute; top: 10.7%; left: 80.5%; z-index: 2; width: 250px;">
+</div>
+<div id = "scene3layout">
+<img id = "oilItem" src="images/oil.png" onclick="oilClick()" style="position: absolute; top: 45%; left: 10%; z-index: 2; width: 400px;">
+<img id = "tikiItem" src="images/tikitorch.png" onclick="tikiClick()" style="position: absolute; top: 10%; left: 55%; z-index: 2; width: 150px;">
+<img id = "shellItem" src = "images/shell.png" onclick="shellClick()" style="position: absolute; top: 72%; left: 74%; z-index: 2; width: 40px;">
+</div>
+<img src="images/plane.png" onclick="planeClick()" id = "planeScene" style="position: absolute; top: 5%; left: 43%; z-index: 2; width: 800px;">
+<img id = "sandMound" onclick = "sandClick()"src = "images/sandmound.png" style="position: absolute; top: 80%; left: 40%; z-index: 2; width: 200px;">
+<img id = "escapeBoat" onclick = "endGame()"src="images/boat.png" style="position: absolute; top: 75%; left: 0%; z-index: 2;">
+<img src = "images/titlebg.png" id = "titleBackGround">
+<audio src="images/The Chamber.mp3" id = "gameSong"></audio>
+<img src = "images/credits.png" id = "credits" >
+<img src = "images/controls.png" id = "controls">
+<img id = "endGamePicture" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5;">
+    </body>
+</html>

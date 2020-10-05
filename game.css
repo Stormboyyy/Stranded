@@ -1,0 +1,248 @@
+#controls{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#credits{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#rockZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;}
+#planeScene{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;}
+#crabboZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;}
+#treeZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;}
+#oilZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;}
+#tikiZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;}
+#shellZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;}
+#planeZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;}
+#mapZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#paintingZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#flaskZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#radioZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#lampZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#removeZoom{
+    z-index: 5;
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    width: 300px;
+}
+#clockZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#plantZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#barrelZoom{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#clock{
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+#right_arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    left:92%;
+}
+#roomScene{
+    z-index: 2;
+}
+#left_arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    left: 15px;
+}
+#currentScene{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#optionsMenu{
+    text-align: center;
+    z-index: 4;
+}
+#optionsButton{
+    height: 100px;
+    width: 300px;
+}
+#startButton{
+    height: 100px;
+    width: 300px;
+}
+#StartMenu{
+    text-align: center;
+    z-index: 3;
+}
+#charecterChangeButton{
+    height: 100px;
+    width: 300px;
+}
+#backButton{
+    height: 100px;
+    width: 300px;
+}
+#controlsButton{
+    height: 100px;
+    width: 300px;
+}
+#creditsButton{
+    height: 100px;
+    width: 300px;
+}
+#pauseMenuButton{
+    height: 100px;
+    width: 300px;
+}
+#pauseMenu{
+    text-align: center;
+    display: none;
+    z-index: 3;
+}
+#player{
+    width: 75px;
+    height: 150px;
+    position: absolute;
+    z-index: 3;
+}
+#titleBackGround{
+    width: 100%;
+    height: 100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: -1;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(197, 192, 167);
+}
