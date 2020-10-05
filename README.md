@@ -1,2 +1,2 @@
 # Stranded
-Upon crashing into a mysterious, seemingly deserted island, you play as a character that follows clues in order to attempt an escape off the island. This game is riddled with mystery, such as the nature of the islands time loop, or any help you may be getting.
+Upon crashing into a mysterious, seemingly deserted island, you play as a character that follows clues in order to attempt an escape off the island. This game is riddled with mystery, such as the nature of the islands time loop, or any help you may be getting. There are all the images individually here, then HTML, JS and CSS files directly here then there is a zipped image folder and finnally a zipped folder of everything.
